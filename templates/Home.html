@@ -1,0 +1,13 @@
+{% extends "base.html"%}
+{% block content %}
+<h1><strong>Build a blog</strong></h1>
+        {% if blog|length == 0 %}
+        <p>NO Blog</p>
+        {%else%}
+                <li><h2>{{title}}</h2>
+                        <ul> {{entry}}</ul>
+                </li>
+                </hr>
+        {% endif %}
+
+{% endblock %}   

@@ -1,0 +1,20 @@
+{% extends "base.html"%}
+
+{% block content%}
+
+        <h1>Add Blog</h1>
+        <form action = "/blog" method='GET'>
+            <lable><strong>Blog Title</strong>
+            <br/>
+            
+            <input type="text" name = "blogtitle" value="{{title}}">
+  
+            <br/>
+            <br/>
+            <lable><strong>Blog Entry</strong> <br/>
+            <textarea class ="input" name ="blogentry" value="{{entry}}" 
+            style = "height:100px; width: 200px">Enter text here </textarea>
+            <br/>
+            <input type="submit" value="Add blog">
+        </form>
+{% endblock %} 
