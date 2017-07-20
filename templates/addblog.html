@@ -3,18 +3,19 @@
 {% block content%}
 
         <h1>Add Blog</h1>
-        <form action = "/blog" method='GET'>
+        <form action = "/addblog" method="post">
             <lable><strong>Blog Title</strong>
             <br/>
-            
-            <input type="text" name = "blogtitle" value="{{title}}">
-  
+
+            <input type="text" name="blogtitle"/>
+            <p class="error">{{title_error}}</p>
             <br/>
             <br/>
             <lable><strong>Blog Entry</strong> <br/>
-            <textarea class ="input" name ="blogentry" value="{{entry}}" 
-            style = "height:100px; width: 200px">Enter text here </textarea>
+            <textarea class ="input" name ="blogentry"
+            style = "height:100px; width: 200px"></textarea>
+            <p class="error">{{entry_error}}</p>
             <br/>
-            <input type="submit" value="Add blog">
+            <input type="submit" value="Add">
         </form>
-{% endblock %} 
+{% endblock %}

@@ -8,15 +8,16 @@
         <table>
             <tr>
                 <td>
-                <a href = "/Home.html" ><h2> Home</h2></a>
+                <a href = {{ url_for("index")}} ><h2> Home</h2></a>
                 </td>
                 <td width = "50"></td>
                 <td>
-                <a href = "/addblog.html"><h2> Add Blog</h2></a>
+                <a href = {{url_for("add_blog")}}><h2> Add Blog</h2></a>
                 </td>
             </tr>
         </table>
         <hr/>
+
 
     {% block content %}
     
