@@ -14,13 +14,25 @@
                 <td>
                 <a href = {{url_for("add_blog")}}><h2> Add Blog</h2></a>
                 </td>
-            </tr>
+                <td width = "50"></td>
+                  <td>
+                    <a href={{url_for("posts")}}><h2>all post</h2></a>
+                </td>
+                <td width = "200"></td>
+                <td>
+                    <a href = {{url_for("login"}}><h2>Login</h2></a>
+                </td>
+                    <td width ="50"></td>
+                <td>
+                    <a href = {{url_for("Logout")}}<h2>Logout</h2></a>
+                </td>
+                </tr>
         </table>
         <hr/>
 
 
     {% block content %}
-    
+
     {% endblock %}
 </body>
 </html>

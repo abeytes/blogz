@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Register New Account</h2>
+
+  
+
+<form action="/register" method="post">
+<p><label>Username <input type="text" name="username"/></label></p>
+<p class="error">{{username_error}}</p>
+  <p><label>New Password <input type="password" name="password"/></label></p>
+  <p class="error">{{password_error}}</p>
+  <p><label>Verify Password <input type="password" name="verify"/></label></p>
+    <p class="error">{{vpassword_error}}</p>
+  <p><input type="submit" value="Register"/></p>
+
+
+</form>    
+
+{% endblock %}
